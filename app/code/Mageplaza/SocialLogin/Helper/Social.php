@@ -60,6 +60,7 @@ class Social extends HelperData
 
 	public function getBaseAuthUrl()
 	{
-		return $this->_getUrl('sociallogin/social/callback', array('_nosid' => true));
+		//return $this->_getUrl('sociallogin/social/callback', array('_nosid' => true));
+		return($this->getCurrentScope() . 'sociallogin/social/callback' );
 	}
 }
