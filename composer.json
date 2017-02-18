@@ -11,7 +11,8 @@
         "magento/product-community-edition": "2.1.4",
         "composer/composer": "@alpha",
         "webshopapps/module-matrixrate": "^20.0",
-        "mirasvit/module-blog": "^1.0"
+        "mirasvit/module-blog": "^1.0",
+        "magefan/module-login-as-customer": "^2.1"
     },
     "require-dev": {
         "phpunit/phpunit": "4.1.0",
