@@ -86,6 +86,7 @@ require([
         $(".products-grid .weltpixel-quickview").each(function(){
             $(this).appendTo($(this).parent().parent().children(".product-item-photo"));
         });
+        $('#maincontent .columns').append($('.ln_overlay').detach());
         $(".word-rotate").each(function() {
 
             var $this = $(this),

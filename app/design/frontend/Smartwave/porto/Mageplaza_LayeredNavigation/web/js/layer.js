@@ -132,7 +132,6 @@ define([
                         $(self.options.productsListSelector).trigger('contentUpdated');
                     }
                     $('.ln_overlay').hide();
-                    
                     if(typeof enable_quickview != 'undefined' && enable_quickview == true) {
                         requirejs(['jquery', 'weltpixel_quickview' ],
                         function   ($, quickview) {
@@ -144,6 +143,9 @@ define([
                             });
                         });
                     }
+                    $(".products-grid .weltpixel-quickview").each(function(){
+                        $(this).appendTo($(this).parent().parent().children(".product-item-photo"));
+                    });
                 },
                 error: function () {
                     window.location.reload();

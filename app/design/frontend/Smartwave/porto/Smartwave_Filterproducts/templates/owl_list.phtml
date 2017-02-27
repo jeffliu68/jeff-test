@@ -178,12 +178,14 @@ $lazy_owl = $this->getData("lazy_owl");
                         <?php
                             $_productNameStripped = $block->stripTags($_product->getName(), null, true);
                         ?>
+                        <?php if(!$_category_grid_config['move_title']):?>
                         <strong class="product name product-item-name">
                             <a class="product-item-link"
                                href="<?php echo $_product->getProductUrl() ?>">
                                 <?php echo $_helper->productAttribute($_product, $_product->getName(), 'name'); ?>
                             </a>
                         </strong>
+                        <?php endif;?>
                         <?php //$_category_config['rating_star'] = "";  //disabled at the moment ?>
                         <?php if($_category_config['rating_star']): ?>
                         <?php
@@ -203,6 +205,14 @@ $lazy_owl = $this->getData("lazy_owl");
                         </div>
                         <?php endif; ?>
                         <?php endif; ?>
+                        <?php if($_category_grid_config['move_title']):?>
+                            <strong class="product name product-item-name">
+                                <a class="product-item-link"
+                                   href="<?php echo $_product->getProductUrl() ?>">
+                                    <?php echo $_helper->productAttribute($_product, $_product->getName(), 'name'); ?>
+                                </a>
+                            </strong>
+                        <?php endif;?>
                         <?php if ($showDescription):?>
                             <div class="product description product-item-description">
                                 <?php echo $_helper->productAttribute($_product, $_product->getShortDescription(), 'short_description') ?>

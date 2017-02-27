@@ -19,7 +19,10 @@ class Type implements \Magento\Framework\Option\ArrayInterface
             ['value' => '11', 'label' => __('Type 11')], 
             ['value' => '12', 'label' => __('Type 12')], 
             ['value' => '13', 'label' => __('Type 13')], 
-            ['value' => '14', 'label' => __('Type 14')]
+            ['value' => '14', 'label' => __('Type 14')],
+            ['value' => '15', 'label' => __('Type 15')],
+            ['value' => '16', 'label' => __('Type 16')],
+            ['value' => '17', 'label' => __('Type 17')]
         ];
     }
 
@@ -39,7 +42,10 @@ class Type implements \Magento\Framework\Option\ArrayInterface
             '11' => __('Type 11'), 
             '12' => __('Type 12'), 
             '13' => __('Type 13'), 
-            '14' => __('Type 14')
+            '14' => __('Type 14'),
+            '15' => __('Type 15'),
+            '16' => __('Type 16'),
+            '17' => __('Type 17')
         ];
     }
 }

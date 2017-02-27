@@ -8,7 +8,7 @@
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
     <system>
         <tab id="smartwave_porto" translate="label" sortOrder="50">
-            <label>Porto 2.4.5</label>
+            <label>Porto 2.4.6</label>
         </tab>
         <section id="porto_settings" translate="label" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
             <label>Porto - Settings Panel</label>
@@ -492,6 +492,11 @@
                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
                     <comment>If yes, all of the action links that "Add to Cart" button, "Add to Compare" link and "Add to Wishlist" link will be moved into the product image area.</comment>
                 </field>
+                <field id="move_title" translate="label comment" type="select" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Move Product Title</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment>If yes, title move below rating star.</comment>
+                </field>
             </group>
             <group id="product" translate="label" sortOrder="150" showInDefault="1" showInWebsite="1" showInStore="1">
                 <label>Product View</label>
@@ -514,6 +519,9 @@
                 </field>
                 <field id="main_custom_block" translate="label comment" type="text" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Static Block Id for Main Custom Block</label>
+                </field>
+                <field id="main_custom_block2" translate="label comment" type="text" sortOrder="105" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Static Block Id for Main Custom Block 2</label>
                 </field>
                 <field id="side_custom_block" translate="label comment" type="text" sortOrder="110" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Static Block Id for Sidebar Custom Block</label>
@@ -555,11 +563,23 @@
                     <label>Product Tabs Style</label>
                     <source_model>Smartwave\Porto\Model\Config\Settings\Product\Tabstyle</source_model>
                 </field>
+
+                <field id="tab_full_background" translate="label comment" type="select" sortOrder="310" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Product Tabs Background Full Width</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="custom_block_next_tab" translate="label comment" type="text" sortOrder="320" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Show custom block to next to the tab</label>
+                </field>
                 <field id="move_tab" translate="label comment" type="select" sortOrder="350" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Move Product Tabs at the Right of Product Image</label>
                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
                 </field>
-                <field id="custom_tabs_heading" translate="label comment" sortOrder="400" showInDefault="1" showInWebsite="1" showInStore="1">
+                <field id="move_upsell_full" translate="label comment" type="select" sortOrder="360" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Move Upsel Product Full Width Background</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="custom_tabs_heading" translate="label comment" sortOrder="370" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Product Custom Tabs</label>
                     <frontend_model>Magento\Config\Block\System\Config\Form\Field\Heading</frontend_model>
                 </field>

@@ -255,6 +255,9 @@ class Topmenu extends \Magento\Framework\View\Element\Template
                 $html .= '</a>';
                 if(count($children) > 0 || (($menu_type=="fullwidth" || $menu_type=="staticwidth") && ($menu_top_content || $menu_left_content || $menu_right_content || $menu_bottom_content))) {
                     $html .= '<div class="level0 submenu"'.$custom_style.'>';
+                    if(($menu_type=="fullwidth" || $menu_type=="staticwidth")) {
+                        $html .= '<div class="container">';
+                    }
                     if(($menu_type=="fullwidth" || $menu_type=="staticwidth") && $menu_top_content) {
                         $html .= '<div class="menu-top-block">'.$this->getBlockContent($menu_top_content).'</div>';
                     }
@@ -271,6 +274,9 @@ class Topmenu extends \Magento\Framework\View\Element\Template
                     }
                     if(($menu_type=="fullwidth" || $menu_type=="staticwidth") && $menu_bottom_content) {
                         $html .= '<div class="menu-bottom-block">'.$this->getBlockContent($menu_bottom_content).'</div>';
+                    }
+                    if(($menu_type=="fullwidth" || $menu_type=="staticwidth")) {
+                        $html .= '</div>';
                     }
                     $html .= '</div>';
                 }

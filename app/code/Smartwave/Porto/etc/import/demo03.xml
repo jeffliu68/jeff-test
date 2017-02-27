@@ -850,9 +850,6 @@ button.action.primary {
     font-family: "Oswald";
     text-transform: uppercase;
     font-weight: 700;
-}
-.product-info-main .swatch-attribute-options {
-    margin-top: 10px;
 }]]></custom_style>
             <custom_style_2><![CDATA[]]></custom_style_2>
         </custom_settings>

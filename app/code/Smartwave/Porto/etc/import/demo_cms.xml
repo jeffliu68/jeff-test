@@ -8,16 +8,15 @@
         </pages>
         <blocks>
             <item>porto_homeslider_1</item>
-            <item>porto_custom_block_for_header</item>
-            <item>porto_footer_links</item>
-            <item>porto_footer_contact_information</item>
-            <item>porto_footer_features</item>
-            <item>porto_footer_bottom_custom_block</item>
+            <item>porto_custom_block_for_header_home1</item>
+            <item>porto_footer_top_1_for_1</item>
+            <item>porto_footer_middle_1_for_1</item>
+            <item>porto_footer_middle_2_for_1</item>
             <item>porto_category_side_custom_block</item>
-            <item>porto_product_side_custom_block</item>
+            <item>porto_product_side_custom_block_new</item>
             <item>porto_custom_menu_before</item>
             <item>porto_custom_menu</item>
-            <item>porto_category_banner_fashion</item>
+            <item>porto_fashion_category_banner_demo1</item>
             <item>porto_custom_tab</item>
         </blocks>
     </demo01>
@@ -29,16 +28,15 @@
         </pages>
         <blocks>
             <item>porto_homeslider_2</item>
-            <item>porto_custom_block_for_header</item>
-            <item>porto_footer_links</item>
-            <item>porto_footer_contact_information</item>
-            <item>porto_footer_features</item>
-            <item>porto_footer_bottom_custom_block</item>
+            <item>porto_custom_block_for_header_home2</item>
+            <item>porto_footer_middle_1_for_2</item>
+            <item>porto_footer_middle_2_for_2</item>
+            <item>porto_footer_bottom_custom_block_demo2</item>
             <item>porto_category_side_custom_block</item>
-            <item>porto_product_side_custom_block</item>
+            <item>porto_product_side_custom_block_new</item>
             <item>porto_custom_menu_before</item>
             <item>porto_custom_menu</item>
-            <item>porto_category_banner_fashion</item>
+            <item>porto_fashion_category_banner_demo1</item>
             <item>porto_custom_tab</item>
         </blocks>
     </demo02>
@@ -94,16 +92,17 @@
         </pages>
         <blocks>
             <item>porto_homeslider_5</item>
-            <item>porto_custom_block_for_header</item>
+            <item>porto_custom_block_for_header_home1</item>
             <item>porto_footer_links</item>
-            <item>porto_footer_contact_information</item>
             <item>porto_footer_features</item>
-            <item>porto_footer_bottom_custom_block</item>
+            <item>porto_footer_newsletter</item>
+            <item>porto_footer_contact_information_new</item>
+            <item>porto_footer_bottom_custom_block_demo5</item>
             <item>porto_category_side_custom_block</item>
-            <item>porto_product_side_custom_block</item>
+            <item>porto_product_side_custom_block_demo5</item>
             <item>porto_custom_menu_before</item>
             <item>porto_custom_menu</item>
-            <item>porto_category_banner_fashion</item>
+            <item>porto_fashion_category_banner_demo5</item>
             <item>porto_custom_tab</item>
         </blocks>
     </demo05>
@@ -181,16 +180,16 @@
             <item>porto_home_9</item>
         </pages>
         <blocks>
-            <item>porto_custom_block_for_header</item>
-            <item>porto_footer_links</item>
-            <item>porto_footer_contact_information</item>
-            <item>porto_footer_features</item>
-            <item>porto_footer_bottom_custom_block</item>
+            <item>porto_homeslider_9</item>
+            <item>porto_custom_block_for_header_home1</item>
+            <item>porto_footer_middle_1_for_2</item>
+            <item>porto_footer_middle_2_for_2</item>
+            <item>porto_footer_bottom_custom_block_demo2</item>
             <item>porto_category_side_custom_block</item>
-            <item>porto_product_side_custom_block</item>
+            <item>porto_product_side_custom_block_new</item>
             <item>porto_custom_menu_before</item>
             <item>porto_custom_menu</item>
-            <item>porto_category_banner_fashion</item>
+            <item>porto_fashion_category_banner_demo1</item>
             <item>porto_custom_tab</item>
         </blocks>
     </demo09>
@@ -288,10 +287,10 @@
         <blocks>
             <item>porto_homeslider_14</item>
             <item>porto_custom_block_for_header</item>
-            <item>porto_footer_links</item>
-            <item>porto_footer_contact_information</item>
-            <item>porto_footer_features</item>
-            <item>porto_footer_bottom_custom_block</item>
+            <item>porto_footer_middle_1_for_14_new</item>
+            <item>porto_footer_middle_2_for_14_new</item>
+            <item>porto_custom_block_product_for_demo14</item>
+            <item>porto_custom_block_product_tab_for_demo14</item>
             <item>porto_category_side_custom_block</item>
             <item>porto_product_side_custom_block</item>
             <item>porto_custom_menu_before</item>
@@ -351,16 +350,17 @@
         </pages>
         <blocks>
             <item>porto_homeslider_17</item>
-            <item>porto_custom_block_for_header</item>
-            <item>porto_footer_links</item>
+            <item>porto_custom_block_for_header_home1</item>
             <item>porto_footer_contact_information</item>
+            <item>porto_footer_links</item>
             <item>porto_footer_features</item>
-            <item>porto_footer_bottom_custom_block</item>
+            <item>porto_footer_newsletter</item>
+            <item>porto_footer_bottom_custom_block_demo2</item>
             <item>porto_category_side_custom_block</item>
-            <item>porto_product_side_custom_block</item>
+            <item>porto_product_side_custom_block_demo17</item>
             <item>porto_custom_menu_before</item>
             <item>porto_custom_menu</item>
-            <item>porto_category_banner_fashion</item>
+            <item>porto_fashion_category_banner_demo17</item>
             <item>porto_custom_tab</item>
         </blocks>
     </demo17>

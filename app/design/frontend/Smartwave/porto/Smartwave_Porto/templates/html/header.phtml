@@ -216,6 +216,54 @@
         </div>
         <?php echo $this->getChildHtml("minicart"); ?>
     </div>
+<?php elseif($header_type == 15 ): ?>
+    <div class="header content">
+    <?php echo $this->getChildHtml("logo"); ?>
+        <div class="header-right-area">
+            <div class="header-link-area">
+                <div class="top-links-area panel header">
+                    <?php echo $this->getChildHtml("skip_to_content"); ?>
+                    <?php echo $this->getChildHtml("header.links"); ?>
+                </div>
+                <div class="main-link">
+                    <?php echo $this->getChildHtml("navigation.sections"); ?>
+                </div>
+            </div>
+            <div class="switcher-area">
+                <div class="search-area">
+                    <a href="javascript:void(0)" class="search-toggle-icon"><i class="porto-icon-search"></i><span><?php echo __('Search'); ?></span></a>
+                    <?php echo $this->getChildHtml("top.search"); ?>
+                </div>
+                <div class="cart-area">
+                    <?php echo $this->getChildHtml("currency"); ?>
+                    <?php echo $this->getChildHtml("store_language"); ?>
+                    <?php echo $this->getChildHtml("minicart"); ?>
+                </div>
+            </div>
+        </div>
+    </div>
+<?php elseif($header_type == 17 ): ?>
+    <div class="main-panel-top">
+        <div class="container">
+            <div class="main-panel-inner">
+                <div class="panel wrapper">
+                    <div class="panel header">
+                        <?php echo $this->getChildHtml("skip_to_content"); ?>
+                        <?php echo $this->getChildHtml("currency"); ?>
+                        <?php echo $this->getChildHtml("store_language"); ?>
+                        <?php echo $this->getChildHtml("header.links"); ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header content">
+        <?php echo $this->getChildHtml("logo"); ?>
+        <?php echo $this->getChildHtml("minicart"); ?>
+        <?php echo $this->getChildHtml("top.search"); ?>
+        <?php echo $this->getChildHtml("custom_block"); ?>
+    </div>
+    <?php echo $this->getChildHtml("navigation.sections"); ?>
 <?php else: ?>
     <div class="panel wrapper">
         <div class="panel header">
@@ -231,7 +279,6 @@
     <?php echo $this->getChildHtml("top.search"); ?>
     <?php echo $this->getChildHtml("custom_block"); ?>
     </div>
-    
     <?php echo $this->getChildHtml("navigation.sections"); ?>
 <?php endif; ?>
 </header>

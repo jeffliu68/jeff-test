@@ -15,6 +15,7 @@ $_imagehelper = $this->helper('Magento\Catalog\Helper\Image');
 $_portohelper = $this->helper('Smartwave\Porto\Helper\Data');
 $review_model = $_portohelper->getModel('\Magento\Review\Model\Review');
 $_category_config = $_portohelper->getConfig('porto_settings/category');
+$_category_grid_config = $this->helper('Smartwave\Porto\Helper\Data')->getConfig('porto_settings/category_grid');
 switch ($type = $block->getType()) {
 
     case 'related-rule':
@@ -238,9 +239,18 @@ $image_height = ($_category_config['ratio_height'])?$_category_config['ratio_hei
                         <?php endif; ?>
                     </a>
                     <div class="product details product-item-details">
-                        <strong class="product name product-item-name"><a class="product-item-link" title="<?php echo $block->escapeHtml($_item->getName()) ?>" href="<?php /* @escapeNotVerified */ echo $block->getProductUrl($_item) ?>">
-                            <?php echo $block->escapeHtml($_item->getName()) ?></a>
-                        </strong>
+                        <?php if($type == 'related'):?>
+                            <strong class="product name product-item-name"><a class="product-item-link" title="<?php echo $block->escapeHtml($_item->getName()) ?>" href="<?php /* @escapeNotVerified */ echo $block->getProductUrl($_item) ?>">
+                                    <?php echo $block->escapeHtml($_item->getName()) ?></a>
+                            </strong>
+                        <?php else:?>
+                            <?php if(!$_category_grid_config['move_title']):?>
+                                <strong class="product name product-item-name"><a class="product-item-link" title="<?php echo $block->escapeHtml($_item->getName()) ?>" href="<?php /* @escapeNotVerified */ echo $block->getProductUrl($_item) ?>">
+                                        <?php echo $block->escapeHtml($_item->getName()) ?></a>
+                                </strong>
+                            <?php endif;?>
+                        <?php endif;?>
+
                         <?php if($_category_config['rating_star']): ?>
                         <?php
                             $review_model->getEntitySummary($_item);
@@ -259,7 +269,11 @@ $image_height = ($_category_config['ratio_height'])?$_category_config['ratio_hei
                         </div>
                         <?php endif; ?>
                         <?php endif; ?>
-
+                        <?php if($_category_grid_config['move_title'] && $type != 'related'):?>
+                            <strong class="product name product-item-name"><a class="product-item-link" title="<?php echo $block->escapeHtml($_item->getName()) ?>" href="<?php /* @escapeNotVerified */ echo $block->getProductUrl($_item) ?>">
+                                    <?php echo $block->escapeHtml($_item->getName()) ?></a>
+                            </strong>
+                        <?php endif;?>
                         <?php /* @escapeNotVerified */ echo $block->getProductPrice($_item); ?>
 
                             <?php if (!$_item->isComposite() && $_item->isSaleable() && $type == 'related'): ?>
