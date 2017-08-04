@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+	   <add id="Jeff_Test::bid" title="Bid" module="Jeff_Test" sortOrder="30" resource="Jeff_Test::bid"/>
+	   <add id="Jeff_Test::bids" title="Bids" module="Jeff_Test" sortOrder="10" action="jefftest/bid" resource="Jeff_Test::bid" parent="Jeff_Test::bid"/>
+	   <add id="Jeff_Test::bid_configuration" title="Configuration" module="Jeff_Test" sortOrder="99" parent="Jeff_Test::bid" action="adminhtml/system_config/edit/section/helloworld" resource="Jeff_Test::helloworld_configuration"/>   	
+    </menu>
+</config>

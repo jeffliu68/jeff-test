@@ -1,0 +1,28 @@
+<?php
+
+$product_id = $block->getProduct()->getId();
+$customer_id = $block->getCustomerId();
+//echo $bids->getSelect();
+
+$currentBid = $block->getHelper()->getCurrentBid($product_id);
+
+switch ($currentBid) {
+	case -2:
+		echo '<h2>Bid is not active.</h2>';
+		break;
+	case -1:
+		echo '<h2>Bid has closed.</h2>';
+		break;
+	default:
+		echo '<h2>Current Bid is ' . $currentBid . '</h2>';
+		break;
+}
+
+
+?>
+<div><form action="/jefftest/bid/add" method="post">
+<input type="hidden" name="product_id" value="<?php echo $product_id; ?>">
+<input type="hidden" name="customer_id" value="<?php echo $customer_id; ?>">
+<h4>Your Bid: <input type="text" name="bid_price" value="0"></h4>
+<input type="submit" value="Place Bid">
+</form></div>
